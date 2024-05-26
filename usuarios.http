@@ -1,0 +1,23 @@
+GET http://localhost:3000/api/usuarios
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmRlZmluZWQiOiJndmVyYUB1di5teCIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJHdWlsbGVybW8gVmVyYSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluaXN0cmFkb3IiLCJpc3MiOiJTZXJ2aWRvckZlaUpXVCIsImF1ZCI6IkNsaWVudGVzRmVpSldUIiwiaWF0IjoxNzE2NjcyMDYyLCJleHAiOjE3MTY2NzMyNjJ9.W45xqR7MNYB90lZrh3hvHv9MtP3R5RaX6X9oXHJedRk
+###
+GET http://localhost:3000/api/usuarios/2
+###
+POST http://localhost:3000/api/usuarios
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmRlZmluZWQiOiJndmVyYUB1di5teCIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJHdWlsbGVybW8gVmVyYSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluaXN0cmFkb3IiLCJpc3MiOiJTZXJ2aWRvckZlaUpXVCIsImF1ZCI6IkNsaWVudGVzRmVpSldUIiwiaWF0IjoxNzE2NjcwNjY1LCJleHAiOjE3MTY2NzE4NjV9.BjaihMIysrF7KqPotAG4TwEbAFpG__vdNKaeGcOdwqQ
+
+{
+    "email": "vdavid.vu.mx",
+    "password": "david",
+    "nombre": "David Vega Tepetla",
+    "rol": "Administrador"
+}
+###
+PUT http://localhost:3000/api/usuarios/3
+Content-Type: application/json
+"id": 3,
+"nombre": "Usuario pato editado",
+"rol": "Usuario"
+###
+DELETE http://localhost:3000/api/usuarios/3
